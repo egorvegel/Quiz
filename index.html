@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+		integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/gameFirst.css">
+	<link rel="stylesheet" href="css/gameSecond.css">
+</head>
+
+<body>
+	<!--
+	<nav>
+		<div class="container">
+			<div class="nav__links">
+				Eng
+				 Later
+				<a href="#" class="btn g1">Игра 1</a>
+				<a href="#" class="btn g2">Игра 2</a>
+			
+			</div>
+		</div>
+	</nav>
+		-->
+	<div class="game__first">
+		<div class="container">
+			<h2 class="game__first__title">Выберите любую из 5 тем для изучения</h2>
+			<div class="game__first__time hide">5</div>
+
+			<div class="game__first__themes">
+				<div class="theme" data-theme="education">
+					<div class="theme__education__img theme__img">
+						<i class="fas fa-graduation-cap"></i>
+					</div>
+					<div class="theme__education__eng theme__rus">Образование</div>
+				</div>
+
+				<div class="theme" data-theme="medicine">
+					<div class="theme__medicine__img theme__img">
+						<i class="fas fa-clinic-medical"></i>
+					</div>
+					<div class="theme__medicine__eng theme__rus">Медицина</div>
+				</div>
+
+				<div class="theme" data-theme="work">
+					<div class="theme__work__img theme__img">
+						<i class="fas fa-briefcase"></i>
+					</div>
+					<div class="theme__school__eng theme__rus">Работа</div>
+				</div>
+
+				<div class="theme" data-theme="transport">
+					<div class="theme__transport__img theme__img">
+						<i class="fas fa-car-alt"></i>
+					</div>
+					<div class="theme__school__eng theme__rus">Транспорт</div>
+				</div>
+
+				<div class="theme" data-theme="programming">
+					<div class="theme__programming__img theme__img">
+						<i class="fas fa-laptop-code"></i>
+					</div>
+					<div class="theme__school__eng theme__rus">Программирование</div>
+				</div>
+			</div>
+
+			<div class="items hide">
+				<div class="item ">
+					<div class="img">
+						<img src="" alt="pic">
+					</div>
+					<div class="text__eng"></div>
+					<div class="text__rus"></div>
+					<div class="curs"></div>
+				</div>
+
+				<div class="item ">
+					<div class="img">
+						<img src="" alt="pic">
+					</div>
+					<div class="text__eng"></div>
+					<div class="text__rus"></div>
+					<div class="curs"></div>
+				</div>
+
+				<div class="item">
+					<div class="img">
+						<img src="" alt="pic">
+					</div>
+					<div class="text__eng"></div>
+					<div class="text__rus"></div>
+					<div class="curs"></div>
+				</div>
+
+				<div class="item">
+					<div class="img">
+						<img src="" alt="pic">
+					</div>
+					<div class="text__eng"></div>
+					<div class="text__rus"></div>
+					<div class="curs"></div>
+				</div>
+
+				<div class="item">
+					<div class="img">
+						<img src="" alt="pic">
+					</div>
+					<div class="text__eng"></div>
+					<div class="text__rus"></div>
+					<div class="curs"></div>
+				</div>
+			</div>
+
+			<div class="questions hide">
+				<div class="word"></div>
+				<div class="blocks">
+					<a href="#" class="block"></a>
+					<a href="#" class="block"></a>
+					<a href="#" class="block"></a>
+					<a href="#" class="block"></a>
+					<a href="#" class="block"></a>
+				</div>
+			</div>
+
+
+			<div class="result hide">
+				<table class="">
+					<tr id="top">
+						<td class="td__answer">
+							<div class="td__answer__text"></div>
+							<div class="td__circle"></div>
+						</td>
+						<td class="td__answer">
+							<div class="td__answer__text"></div>
+							<div class="td__circle"></div>
+						</td>
+						<td class="td__answer">
+							<div class="td__answer__text"></div>
+							<div class="td__circle"></div>
+						</td>
+						<td class="td__answer">
+							<div class="td__answer__text"></div>
+							<div class="td__circle"></div>
+						</td>
+						<td class="td__answer">
+							<div class="td__answer__text"></div>
+							<div class="td__circle"></div>
+						</td>
+					</tr>
+					<tr id="bottom">
+						<td>
+							<div class="td__text" data-right=""></div>
+						</td>
+						<td>
+							<div class="td__text" data-right=""></div>
+						</td>
+						<td>
+							<div class="td__text" data-right=""></div>
+						</td>
+						<td>
+							<div class="td__text" data-right=""></div>
+						</td>
+						<td>
+							<div class="td__text" data-right=""></div>
+						</td>
+					</tr>
+
+				</table>
+			</div>
+
+
+		</div>
+	</div>
+
+
+	<!--
+	<div class="game__second unvisible__block">
+		<div class="timer">00:00</div>
+		<div class="container">
+			<div class="questions">
+				<div class="word">Hello</div>
+				<div class="blocks">
+					<a class="block">Привет</a>
+					<a class="block">Пока</a>
+					<a class="block">Утро</a>
+					<a class="block">Ад</a>
+					<a class="block">Мозг</a>
+				</div>
+			</div>
+
+			<table class="unvisible__block">
+				<tr>
+					<th>Hello</th>
+					<th>Cat</th>
+					<th>House</th>
+					<th>Book</th>
+					<th>Game</th>
+				</tr>
+				<tr>
+					<td>Привет</td>
+					<td>Кошка</td>
+					<td>Дом</td>
+					<td>Книга</td>
+					<td>Игра</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+	-->
+	<div class="start">
+		<a href="#" class="btn start__btn hide">Начать</a>
+		<a href="#" class="btn exit__btn hide">Назад</a>
+	</div>
+
+	<div class="bgImg">
+		<img src="img/bgImg/birmingem.jpg" alt="City">
+		<div class="bgImgCity">birmingem</div>
+	</div>
+
+
+
+	<script src='js/script.js'></script>
+	<script src='js/bg.js'></script>
+	<script src='js/gameFirst.js'></script>
+	<script src='js/gameSeconds.js'></script>
+</body>
+
+</html>
+
+
+<!--
+				<div class="item__answer hide">
+					<div class="img">
+						<img src="img/car.png" alt="">
+					</div>
+					<div class="text" data-answer='car'>сar</div>
+					<input type="text" class="inp__text">
+					<input type="submit" value='✓' class="inp__access">
+				</div>
+
+				<div class="item__answer hide">
+					<div class="img">
+						<img src="img/cloud.png" alt="">
+					</div>
+					<div class="text" data-answer='cloud'>сloud</div>
+					<input type="text" class="inp__text">
+					<input type="submit" value='✓' class="inp__access">
+				</div>
+
+
+				<div class="item__answer  fire hide">
+					<div class="img">
+						<img src="img/fire.png" alt="">
+					</div>
+					<div class="text" data-answer='fire'>fire</div>
+					<input type="text" class="inp__text">
+					<input type="submit" value='✓' class="inp__access">
+				</div>
+
+				<div class="item__answer hide">
+					<div class="img">
+						<img src="img/flower.png" alt="">
+					</div>
+					<div class="text" data-answer='flower'>flower</div>
+					<input type="text" class="inp__text">
+					<input type="submit" value='✓' class="inp__access">
+				</div>
+
+				<div class="item__answer  water hide">
+					<div class="img">
+						<img src="img/water.png" alt="">
+					</div>
+					<div class="text" data-answer='water'>water</div>
+					<input type="text" class="inp__text">
+					<input type="submit" value='✓' class="inp__access">
+				</div>
+			</div>
+			-->

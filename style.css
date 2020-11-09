@@ -1,0 +1,390 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-family: 'Arial';
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.container{
+	max-width: 1140px;
+	margin: 0 auto;
+}
+
+.hide{
+	display: none !important;
+}
+
+/* !Background -------------*/
+.bgImg{
+	display: inline-block;
+
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	z-index: -1;
+}
+
+.bgImg img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: 50% 50%;
+	filter: brightness(0.4);
+}
+
+.bgImgCity{
+	display: inline-block;
+	position: fixed;
+	right: 3%;
+	bottom: 3%;
+	z-index: 10;
+
+	font-size: 24px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #ffffff;
+	text-shadow: 1px 2px 3px #666;
+}
+
+
+/*  !Nav ---------- */
+nav{
+	width: 100%;
+	min-height: 40px;
+	background: #7c7c7c;
+}
+
+.nav__links{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	
+}
+
+.btn.g1, .btn.g2{
+	display: inline-block;
+	width: 10%;
+	min-height: 40px;
+	line-height: 40px;
+	text-align: center;
+
+	background: #755cff;
+	margin: 0 10px;
+	color: #fff;
+	text-decoration: none;
+	border-radius: 0%;
+}
+
+.btn{
+	display: inline-block;
+	background: #755cff;
+	padding: 10px 20px;
+	margin: 0 10px;
+	border-radius: 5%;
+	color: #fff;
+	text-decoration: none;
+}
+
+.nav__links__btn:hover{
+	background: #777777;
+}
+
+.items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    margin-top: 100px;
+}
+
+
+
+.start{
+    text-align: center;
+}
+
+/* !Первая игра */
+.game__first__themes{
+	display: flex;
+	flex-wrap: wrap;
+
+	margin-top: 50px;
+}
+
+.game__first__title{
+	text-align: center;
+	font-size: 40px;
+	color: #ffffff;
+}
+
+.game__first .theme{
+	display: inline-block;
+	width: calc(20% - 40px);
+
+	padding: 30px 0 0;
+	margin: 0 20px;
+	text-align: center;
+
+	/*background: url("img/flags/GB.png") 50% 50% / cover no-repeat #fff;*/
+	color: #fff;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: all 0.3s ease-in-out;
+}
+
+.game__first .theme:hover{
+	color: rgb(255, 211, 66);
+}
+
+.game__first .theme:hover .theme__img{
+	border: 3px solid rgb(255, 211, 66);
+}
+
+.game__first .theme:hover .theme__rus{
+	background: rgb(255, 211, 66);
+	color: #424242;
+}
+
+.game__first .theme:active{
+	color: rgb(255, 79, 66);
+}
+
+.game__first .theme:active .theme__img{
+	border: 3px solid  rgb(255, 79, 66);
+}
+
+.game__first .theme:active .theme__rus{
+	background: rgb(255, 79, 66);
+	color: #424242;
+}
+
+
+.game__first .theme__img{
+	display: inline-block;
+	margin: 0px auto 30px;
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+	font-size: 25px;
+
+	border-radius: 50%;
+	border: 3px solid #fff;
+	transition: border 0.3s ease-in-out;
+}
+
+.game__first .theme__rus{
+	padding: 5px 10px;
+	font-family: "COMIC SANS MS";
+
+	background: #424242;
+	border-radius: 5px;
+	font-size: 20px;
+	transition: all 0.3s ease-in-out;
+}
+
+.game__first .item,
+.game__first .item__answer{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	width: 10%;
+	height: 250px;
+	margin: 0 20px;
+	background: #755cff;
+	border-radius: 5%;
+
+	opacity: 1;
+	transition: 1s linear opacity;
+}
+
+.wrong{
+    border: 3px solid #ff7b85;
+}
+
+.right{
+    border: 3px solid #83ff83;
+}
+
+.right__bg{
+    background: rgba(131, 255, 131, 0.5);
+}
+
+.wrong__bg{
+    background: rgba(255, 123, 133, 0.5);
+}
+
+
+
+.game__first .item .img,
+.game__first .item__answer .img{
+    width: 50%;
+    text-align: center;
+    height: 90px;
+    margin-bottom: 15px;
+    line-height: 125px;
+
+    border-radius: 50%;
+    position: relative;
+    background: #fff;
+}
+
+.game__first .item.fire img, .item__answer.fire img{
+    width: 60%;
+}
+
+
+.game__first .item.water img, .item__answer.water img{
+    width: 100%;
+    bottom: 10px;
+}
+
+.game__first .item img, .item__answer img{
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 80%;
+}
+
+.game__first .item .text, .item__answer .text{
+    width: 100%;
+    text-align: center;
+    background: #9b9b9b;
+    color: #fff;
+    font-size: 25px;
+}
+
+.game__first .item .curs{
+    text-align: center;
+    color: snow;
+    margin-top: 20px;
+    font-size: 14px;
+    padding: 0 5px;
+    font-style: italic;
+}
+
+.game__first .item__answer .inp__text{
+    margin-top: 10px;
+    padding: 5px;
+    border: none;
+    border-radius: 5%;
+        width: 80%;
+}
+
+.game__first .item__answer .inp__access{
+    margin-top: 10px;
+    border: none;
+    border-radius: 50%;
+    padding: 5px 10px;
+    background: #fff;
+    color: #646464;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.game__first .item__answer .inp__access:hover{
+    background: #9b9b9b;
+    color: #fff;
+}
+/*
+.game__first .item__answer .inp__access:focus{
+    border: none;
+}
+
+.game__first .item__answer .inp__access:active{
+    border: none;
+}*/
+
+
+/* !Вторая игра */
+.game__second{
+    text-align: center;
+}
+
+.game__second .container{
+    width: 50%;
+    margin: 250px auto 0;
+    min-height: 200px;
+    background: rgba(192, 199, 255, 0.7);
+    border-radius: 1%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.game__second .word{
+    margin-top: 10px;
+    color: #fff;
+    text-align: center;
+    font-size: 40px;
+}
+
+.game__second .blocks{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+
+}
+
+.game__second .block{
+    margin: 5px 20px;
+    background: #755cff;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    padding: 10px 30px;
+    border-radius: 5%;
+    font-size: 20px;
+    flex-basis: 120px;
+}
+
+.game__second .block:hover{
+    background:  #777777;
+}
+
+.game__second table{
+    width: 100%;
+    min-height: inherit;
+    text-align: center;
+    vertical-align: middle;
+    border: 5px solid #000;
+    border-collapse: collapse;
+}
+
+
+.game__second td, .game__second th{
+    border: 2px solid #000;
+    font-size: 20px;
+    border-collapse: separate;
+}
+
+.game__second th{
+    font-size: 22px;
+}
+
+.game__second .retry__btn{
+    margin-top: 25px;
+}
+
+.exit__btn{
+    margin-top: 10px;
+}
+
+.unvisible{
+    opacity: 0 !important;
+}
+
+.unvisible__block{
+    display: none !important;
+}

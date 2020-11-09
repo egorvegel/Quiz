@@ -1,0 +1,84 @@
+/* !Вторая игра */
+.game__second{
+	text-align: center;
+}
+
+.game__second .container{
+	width: 50%;
+	margin: 250px auto 0;
+	min-height: 200px;
+	background: rgba(192, 199, 255, 0.7);
+	border-radius: 1%;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.game__second .word{
+	margin-top: 10px;
+	color: #fff;
+	text-align: center;
+	font-size: 40px;
+}
+
+.game__second .blocks{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin-top: 20px;
+
+}
+
+.game__second .block{
+	margin: 5px 20px;
+	background: #755cff;
+	color: #fff;
+	text-align: center;
+	cursor: pointer;
+	padding: 10px 30px;
+	border-radius: 5%;
+	font-size: 20px;
+	flex-basis: 120px;
+}
+
+.game__second .block:hover{
+	background:  #777777;
+}
+
+.game__second table{
+	width: 100%;
+	min-height: inherit;
+	text-align: center;
+	vertical-align: middle;
+	border: 5px solid #000;
+	border-collapse: collapse;
+}
+
+
+.game__second td, .game__second th{
+	border: 2px solid #000;
+	font-size: 20px;
+	border-collapse: separate;
+}
+
+.game__second th{
+	font-size: 22px;
+}
+
+.game__second .retry__btn{
+	margin-top: 25px;
+}
+
+.exit__btn{
+	margin-top: 10px;
+}
+
+.unvisible{
+	opacity: 0 !important;
+}
+
+.unvisible__block{
+	display: none !important;
+}
